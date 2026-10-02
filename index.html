@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Putri Ayu Nuryani</title>
 
     <style>
@@ -11,75 +12,36 @@
             padding: 0;
             box-sizing: border-box;
         }
-<section id="about">
-    <h2>Get to know me more ♡</h2>
 
-    <div class="profile-info">
-        <div class="info-card">
-            <span>Nama</span>
-            <p>Putri Ayu Nuryani</p>
-        </div>
-
-        <div class="info-card">
-            <span>NIM</span>
-            <p>124230051</p>
-        </div>
-
-        <div class="info-card">
-            <span>Program Studi</span>
-            <p>Teknik Geomatika</p>
-        </div>
-
-        <div class="info-card">
-            <span>Asal</span>
-            <p>Bandar Lampung</p>
-        </div>
-    </div>
-</section>
-
-
-<section id="funfact">
-    <h2>Fun fact about me 💤</h2>
-
-    <div class="funfacts">
-        <div class="fact-card">
-            🎀
-            <p>K-pop enthusiast</p>
-        </div>
-
-        <div class="fact-card">
-            🫧
-            <p>100% introvert</p>
-        </div>
-
-        <div class="fact-card">
-            💗
-            <p>24/7 fangirling</p>
-        </div>
-    </div>
-</section>
-        body {
-            font-family: Arial, sans-serif;
-            background: #fff5f8;
-            color: #5a4050;
-            min-height: 100vh;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .container {
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7fa;
+            color: #604653;
+        }
+
+        /* =========================
+           HOME
+        ========================= */
+
+        .home {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 50px;
+            padding: 50px 8%;
         }
 
-        .content {
-            max-width: 1100px;
+        .home-content {
             width: 100%;
+            max-width: 1100px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 60px;
+            gap: 70px;
         }
 
         .text-section {
@@ -87,20 +49,22 @@
         }
 
         .hello {
-            color: #d98ba8;
+            color: #d78da8;
             font-size: 18px;
             margin-bottom: 15px;
+            letter-spacing: 2px;
         }
 
         h1 {
-            font-size: 55px;
+            font-size: 58px;
+            line-height: 1.1;
             color: #9b5c78;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
 
         .subtitle {
             font-size: 20px;
-            color: #80606e;
+            color: #806673;
             margin-bottom: 30px;
         }
 
@@ -111,10 +75,11 @@
         }
 
         .buttons a {
+            display: inline-block;
             text-decoration: none;
-            padding: 13px 22px;
-            border-radius: 25px;
-            background: #e8a9be;
+            padding: 14px 22px;
+            border-radius: 30px;
+            background: #e6a6bd;
             color: white;
             font-size: 14px;
             transition: 0.3s;
@@ -125,63 +90,164 @@
             transform: translateY(-3px);
         }
 
+        /* =========================
+           PHOTO
+        ========================= */
+
         .photo-section {
             flex: 1;
             display: flex;
             justify-content: center;
-            position: relative;
         }
 
         .photo-frame {
-            width: 300px;
-            height: 380px;
-            background: #f4c9d7;
-            border-radius: 150px 150px 30px 30px;
+            width: 310px;
+            height: 390px;
             padding: 12px;
+            background: #f2c6d6;
+            border-radius: 160px 160px 35px 35px;
             position: relative;
+            box-shadow: 0 15px 35px rgba(160, 100, 120, 0.15);
         }
 
         .photo-frame img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 140px 140px 20px 20px;
+            border-radius: 150px 150px 25px 25px;
         }
 
         .mood {
             position: absolute;
-            right: -45px;
-            top: 30px;
+            right: -55px;
+            top: 35px;
             background: white;
-            padding: 12px 17px;
+            padding: 13px 18px;
             border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(150, 90, 110, 0.15);
             font-size: 13px;
+            box-shadow: 0 8px 25px rgba(150, 90, 110, 0.15);
         }
 
-        .decoration {
-            position: absolute;
-            font-size: 25px;
+        /* =========================
+           GENERAL SECTION
+        ========================= */
+
+        section {
+            min-height: 100vh;
+            padding: 100px 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
 
-        .star {
-            top: -20px;
-            left: 20px;
+        section h2 {
+            font-size: 40px;
+            color: #9b5c78;
+            margin-bottom: 45px;
         }
 
-        .heart {
-            bottom: 20px;
-            right: -25px;
+        /* =========================
+           ABOUT ME
+        ========================= */
+
+        #about {
+            background: #fcecf3;
         }
+
+        .profile-info {
+            width: 100%;
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 25px;
+            text-align: left;
+            box-shadow: 0 8px 25px rgba(150, 90, 110, 0.08);
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card span {
+            font-size: 13px;
+            color: #d78da8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-card p {
+            margin-top: 8px;
+            font-size: 18px;
+            color: #604653;
+            font-weight: bold;
+        }
+
+        /* =========================
+           FUN FACT
+        ========================= */
+
+        #funfact {
+            background: #fff7fa;
+        }
+
+        .funfacts {
+            width: 100%;
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .fact-card {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 30px;
+            font-size: 35px;
+            box-shadow: 0 8px 25px rgba(150, 90, 110, 0.08);
+            transition: 0.3s;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .fact-card p {
+            margin-top: 18px;
+            font-size: 17px;
+            color: #604653;
+            font-weight: bold;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 768px) {
-            .content {
+
+            .home {
+                padding: 50px 25px;
+            }
+
+            .home-content {
                 flex-direction: column-reverse;
                 text-align: center;
             }
 
             h1 {
                 font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 17px;
             }
 
             .buttons {
@@ -194,7 +260,23 @@
             }
 
             .mood {
-                right: -25px;
+                right: -30px;
+            }
+
+            section {
+                padding: 80px 25px;
+            }
+
+            section h2 {
+                font-size: 32px;
+            }
+
+            .profile-info {
+                grid-template-columns: 1fr;
+            }
+
+            .funfacts {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -202,26 +284,40 @@
 
 <body>
 
-    <div class="container">
+    <!-- =========================
+         HOME
+    ========================= -->
 
-        <div class="content">
+    <div class="home">
+
+        <div class="home-content">
 
             <div class="text-section">
 
                 <p class="hello">♡ HELLO, I'M</p>
 
-                <h1>Putri Ayu Nuryani</h1>
+                <h1>
+                    Putri Ayu Nuryani
+                </h1>
 
                 <p class="subtitle">
                     An engineering student of Geomatics.
                 </p>
 
                 <div class="buttons">
-                    <a href="#about">Get to know me more</a>
-                    <a href="#funfact">Fun fact about me</a>
+
+                    <a href="#about">
+                        Get to know me more
+                    </a>
+
+                    <a href="#funfact">
+                        Fun fact about me
+                    </a>
+
                 </div>
 
             </div>
+
 
             <div class="photo-section">
 
@@ -233,9 +329,6 @@
                         💤 Mood: In need of sleep
                     </div>
 
-                    <div class="decoration star">✦</div>
-                    <div class="decoration heart">♡</div>
-
                 </div>
 
             </div>
@@ -243,6 +336,76 @@
         </div>
 
     </div>
+
+
+    <!-- =========================
+         ABOUT ME
+    ========================= -->
+
+    <section id="about">
+
+        <h2>
+            Get to know me more ♡
+        </h2>
+
+        <div class="profile-info">
+
+            <div class="info-card">
+                <span>Nama</span>
+                <p>Putri Ayu Nuryani</p>
+            </div>
+
+            <div class="info-card">
+                <span>NIM</span>
+                <p>124230051</p>
+            </div>
+
+            <div class="info-card">
+                <span>Program Studi</span>
+                <p>Teknik Geomatika</p>
+            </div>
+
+            <div class="info-card">
+                <span>Asal</span>
+                <p>Bandar Lampung</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FUN FACT
+    ========================= -->
+
+    <section id="funfact">
+
+        <h2>
+            Fun fact about me 💤
+        </h2>
+
+        <div class="funfacts">
+
+            <div class="fact-card">
+                🎀
+                <p>K-pop enthusiast</p>
+            </div>
+
+            <div class="fact-card">
+                🫧
+                <p>100% introvert</p>
+            </div>
+
+            <div class="fact-card">
+                💗
+                <p>24/7 fangirling</p>
+            </div>
+
+        </div>
+
+    </section>
+
 
 </body>
 </html>
