@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putri Ayu Nuryani</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff5f8;
+            color: #5a4050;
+            min-height: 100vh;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .content {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .text-section {
+            flex: 1;
+        }
+
+        .hello {
+            color: #d98ba8;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: #9b5c78;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #80606e;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 13px 22px;
+            border-radius: 25px;
+            background: #e8a9be;
+            color: white;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover {
+            background: #c97899;
+            transform: translateY(-3px);
+        }
+
+        .photo-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .photo-frame {
+            width: 300px;
+            height: 380px;
+            background: #f4c9d7;
+            border-radius: 150px 150px 30px 30px;
+            padding: 12px;
+            position: relative;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 140px 140px 20px 20px;
+        }
+
+        .mood {
+            position: absolute;
+            right: -45px;
+            top: 30px;
+            background: white;
+            padding: 12px 17px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(150, 90, 110, 0.15);
+            font-size: 13px;
+        }
+
+        .decoration {
+            position: absolute;
+            font-size: 25px;
+        }
+
+        .star {
+            top: -20px;
+            left: 20px;
+        }
+
+        .heart {
+            bottom: 20px;
+            right: -25px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .photo-frame {
+                width: 240px;
+                height: 310px;
+            }
+
+            .mood {
+                right: -25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content">
+
+            <div class="text-section">
+
+                <p class="hello">♡ HELLO, I'M</p>
+
+                <h1>Putri Ayu Nuryani</h1>
+
+                <p class="subtitle">
+                    An engineering student of Geomatics.
+                </p>
+
+                <div class="buttons">
+                    <a href="#about">Get to know me more</a>
+                    <a href="#funfact">Fun fact about me</a>
+                </div>
+
+            </div>
+
+            <div class="photo-section">
+
+                <div class="photo-frame">
+
+                    <img src="foto.jpg" alt="Foto Putri">
+
+                    <div class="mood">
+                        💤 Mood: In need of sleep
+                    </div>
+
+                    <div class="decoration star">✦</div>
+                    <div class="decoration heart">♡</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
